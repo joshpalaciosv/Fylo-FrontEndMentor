@@ -1,6 +1,8 @@
-* {
+/* * {
     outline: 1px solid  white;
 }
+
+div#offending-area * { outline: 1px solid red; } */
 
 body{
     margin: 0 !important;
@@ -70,6 +72,10 @@ body{
     margin-top: -22vh;
 }
 
+.seccion3 {
+    background-color: #181e2a;
+}
+
 .beginSeccion2 {
     padding-top: 25vh !important;
 }
@@ -77,3 +83,221 @@ body{
 .seccion2 .card {
     background-color: #181e2a;
 }
+
+.fyloworks {
+    text-align: justify;
+    padding-left: 0;
+}
+
+.fyloworks a {
+    text-decoration: none;
+    color: rgb(105, 250, 255);
+    border-bottom: 2px solid rgb(105, 250, 255);
+    padding-bottom: 5px;
+}
+
+.cardsComments {
+    background-color: #181e2a;
+    font-family: "Open Sans";
+    color: white;
+    font-size: 12px;
+    padding-top: 7rem;
+    position: relative;
+}
+
+.cardsComments .quotes {
+    position: absolute;
+    top: 5.6rem;
+    left: 60px;
+    width: 50px;
+}
+
+.debugDiv * {
+    outline: 1px solid  white;
+}
+
+.cardItem {
+    background-color: #273347;
+    border-radius: 10px;
+    width: 20rem;
+    /* height: 20rem; */
+}
+
+.cardItem img {
+    border-radius: 50%;
+}
+
+.cardItem .cardContent{
+    margin: 16px;
+}
+
+.cardItem .cardContent .comments {
+    line-height: 2;
+}
+
+/* .cardItem .comments  {
+    margin-top: 25px;
+    line-height: 2;
+} */
+.nameCardItem {
+    color: White;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.titleCardItem {
+    font-size: 10px;
+}
+
+.cardItem + .cardItem {
+        margin-top: 30px;
+}
+
+.emailAction {
+    background-color: #181e2a;
+    position: relative;
+    height: 15rem;
+}
+
+.emailActionContent {
+    justify-self: center;
+    padding-top: 5rem;
+    /* outline: 1px solid  white; */
+    width:80%; 
+}
+
+.headAction {
+    font-family: Raleway;
+    font-weight: 700;
+    width: 250px;
+    font-size: 20px;
+    text-align: center;
+    color:white
+}
+
+.contentBox {
+    /* margin: 20px; */
+    position: absolute;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #273347;
+    border-radius: 10px;
+    border: 100px shadow black;
+    width: 20rem;
+}
+
+.descriptionAction {
+    color: white;
+    font-family: Raleway;
+}
+
+.actionTextBox {
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.actionButton {
+    background-color: rgb(69, 183, 187);;
+    color: white;
+    font-weight: 700;
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+}
+
+.actionTextBox + .actionButton {
+    margin-top: 20px;
+}
+
+.footerSection {
+    padding-top: 10rem;
+    /* margin: 15px; */
+    padding-right: 20px;
+    /* outline: 1px solid  white; */
+    width: 90%;
+}
+
+/* .footerSection .row {
+    outline: 1px solid  white;
+} */
+
+/* .footerSection * {
+    outline: 1px solid  white;
+} */
+
+.footerItem {
+    color:white;
+}
+
+.logoBottom {
+    width: 200px;
+}
+
+.locationIcon {
+    width: 20px;
+}
+
+.footerItem + .footerItem {
+    margin-top: 25px;
+}
+
+/* .contentBox .contentCard {
+    margin: 20px;
+} */
+
+/* style="width: 20rem;" */
+
+@media only screen and (min-width: 1280px) {
+
+    .imgIntro {
+        width: 700px;
+    } 
+
+    .contentBox {
+        width: 40rem;
+    }
+
+    .cardItem + .cardItem {
+        margin-top: 0;
+        margin-left : 30px;
+    }
+
+    .cardsComments .quotes {
+        left: 450px;
+        /* width: 50px; */
+    }
+
+    .backgroundChange {
+        background: url("/images/bg-curvy-desktop.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 60vh;
+        margin-top: -450px;/**/
+    }
+
+    .head {
+        font-family: Raleway;
+        font-weight: 700;
+        width: 100%;
+        font-size: 40px;
+        text-align: center;
+        color:white
+    }
+
+    .descriptionText {
+        width: 100%;
+        font-size:15px;
+        text-align: center;
+        color:white
+    }
+
+}
+
+
+
+
+

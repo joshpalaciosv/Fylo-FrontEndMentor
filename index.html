@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" href="https://fonts.google.com/specimen/Raleway">
-  <link rel="stylesheet" href="https://fonts.google.com/specimen/Open+Sans">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
@@ -15,14 +17,14 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="assets/style.css">
 </head>
-<body>
+<div>
 
     
     <nav class="navbar navbar-expand-lg"  style="background-color: #273347; padding: 30px;"> <!-- navbar-light bg-light -->
-      <div class="container-fluid">
+      <div class="container">
           <!-- Icon on the left -->
           <a class="navbar-brand" href="#">
-              <img src="./images/logo.svg" alt="Logo" width="160" height="40" >
+              <img src="./images/logo.svg" alt="Logo" width="100" >
           </a>
           
           <!-- Menu on the right -->
@@ -50,20 +52,20 @@
   <div class="row d-flex justify-content-center"> <!--Imagen Inicial -->
     
     <div class="col d-flex justify-content-center">
-      <img class="img-fluid" src="./images/illustration-intro.png" alt="Logo" width="90%" height="90%" >
+      <img class="img-fluid imgIntro" src="./images/illustration-intro.png" alt="Logo" width="60%" height="60%" >
     </div>
     
   </div>
-  <div class="row align-items-start">
+  <div class="row">
     <div class="col"></div>
-    <div class="col">
+    <div class="col d-flex justify-content-center">
       <p class="head">All your files in one secure location, accessible anywhere.</p>
     </div>
     <div class="col"></div>
   </div>
-  <div class="row align-items-start">
+  <div class="row">
     <div class="col"></div>
-    <div class="col">
+    <div class="col d-flex justify-content-center">
       <p class="descriptionText">Fylo stores all your most important files in one secure location. Access them wherever 
         you need, share and collaborate with friends family, and co-workers.</p>
     </div>
@@ -91,9 +93,9 @@
 
 <div class="seccion2">
   <!--Seccion de tarjetitas-->
-<div class="row d-flex justify-content-evenly beginSeccion2">
+<div class="row d-flex justify-content-center beginSeccion2">
     
-  <div class="col d-flex flex-column align-items-center">
+  <div class="col-sm-1 col-lg-3 d-flex flex-column align-items-center">
     <div class="card text-center" style="width: 18rem;">
       <img class="card-img-top" src="./images/icon-access-anywhere.svg" alt="Access Anywhere">
       <div class="card-body">
@@ -106,7 +108,7 @@
     </div>
   </div>
 
-  <div class="col d-flex flex-column align-items-center">
+  <div class="col-sm-1 col-lg-3 d-flex flex-column align-items-center">
     <div class="card text-center" style="width: 18rem;">
       <img class="card-img-top" src="./images/icon-security.svg" alt="Security you can trust">
       <div class="card-body">
@@ -121,10 +123,11 @@
   </div>
   
 </div>
-<div class="row d-flex justify-content-evenly">
+
+<div class="row d-flex justify-content-center">
   
   
-  <div class="col d-flex flex-column align-items-center">
+  <div class="col-sm-1 col-lg-3 d-flex flex-column align-items-center">
     <div class="card text-center" style="width: 18rem;">
       <img class="card-img-top" src="./images/icon-collaboration.svg" alt="Real-time collaboration">
       <div class="card-body">
@@ -137,7 +140,7 @@
     </div>
   </div>
 
-  <div class="col d-flex flex-column align-items-center">
+  <div class="col-sm-1 col-lg-3 d-flex flex-column align-items-center">
     <div class="card text-center" style="width: 18rem;">
       <img class="card-img-top" src="./images/icon-any-file.svg" alt="Store any type of file">
       <div class="card-body">
@@ -156,77 +159,177 @@
 </div>
 
 
-<div class="row d-flex justify-content-evenly">
+<div class="row d-flex justify-content-center seccion3">
   
-  <div class="col d-flex flex-column align-items-center">
+  <div class="col-sm-1 col-lg-3 d-flex flex-column align-items-center">
     <div class="row text-center" style="width: 25rem;">
       <img class="img-fluid" src="./images/illustration-stay-productive.png" alt="Logo" width="50%" height="50%" >
     </div>
   </div>
-
-  <div class="col d-flex flex-column align-items-center">
-    <div class="row d-flex align-content-center" style="padding: 10px;">
-      <p style="text-align: center;font-size: 40px;font-weight: bold;color:white">Stay productive, wherever you are</p>
-      <p style="text-align: justify;font-size: 15px;color:white;">Never let location be an issue when accessing your files. Fylo has you covered for all of your file 
+  <!-- d-flex flex-column align-items-center -->
+  <div class="col-sm-1 col-lg-3 d-flex flex-column align-items-center"> 
+    <div class="row d-flex justify-content-center" style="width: 23rem;">
+      <p class="head">Stay productive, wherever you are</p>
+      <p style="text-align: justify;font-size: 15px;color:white">Never let location be an issue when accessing your files. Fylo has you covered for all of your file 
         storage needs.</p>
       
         <p style="text-align: justify;font-size: 15px;color:white">Securely share files and folders with friends, family and colleagues for live collaboration. No email 
         attachments required.</p>
+        <div class="row d-flex justify-content-start">
+          <div class="fyloworks">
+            <a href="#">See how Fylo works <img src="./images/icon-arrow.svg" width="22px" alt="Access Anywhere"> </a>
+          </div>
+        </div>
     </div>
+    
   </div>
-  
+
 </div>
 
+
+<div class="row d-flex justify-content-evenly cardsComments" style="vertical-align: top;">
+  <img src="./images/bg-quotes.png" class="quotes" alt="" />
+  <!-- <div class="col d-flex flex-column align-items-center debugDiv"> -->
+    <div class="row d-flex justify-content-center">
+
+
+      <div class="col-sm-1 cardItem" >
+        <div class="cardContent">
+          <p class="comments">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
+          become a well-oiled collaboration machine.</p>
+          <div class="row">
+            <div style="width: 17%"><img class="cardItemPicture" src="./images/profile-1.jpg" width="30px"></div>
+            <div style="width:83%;text-align: left">
+              <p class="nameCardItem">Satish Patel</p>
+              <p class="titleCardItem">Founder & CEO, Huddle</p>
+            </div>
+          </div>
+          
+          
+        </div>
+      </div>
+
+      <div class="col-sm-1 cardItem">
+        <div class="cardContent">
+          <p class="comments">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
+          become a well-oiled collaboration machine.</p>
+          <div class="row">
+            <div style="width: 17%"><img class="cardItemPicture" src="./images/profile-2.jpg" width="30px"></div>
+            <div style="width:83%;text-align: left">
+              <p class="nameCardItem">Bruce McKenzie</p>
+              <p class="titleCardItem">Founder & CEO, Huddle</p>
+            </div>
+          </div>
+          
+          
+        </div>
+      </div>
+
+
+      <div class="col-sm-1 cardItem">
+        <div class="cardContent">
+          <p class="comments">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
+          become a well-oiled collaboration machine.</p>
+          <div class="row">
+            <div style="width: 17%"><img class="cardItemPicture" src="./images/profile-3.jpg" width="30px"></div>
+            <div style="width:83%;text-align: left">
+              <p class="nameCardItem">Iva Boyd</p>
+              <p class="titleCardItem">Founder & CEO, Huddle</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- </div> -->
   
 
-  See how Fylo works
+</div>
 
-  Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
-  become a well-oiled collaboration machine.
+<div class ="row d-flex justify-content-evenly emailAction">
+  <div class = "col d-flex justify-content-center emailActionContent">
+    <div class="row d-flex justify-content-center contentBox">
+          <p class="headAction">
+            Get early access today
+          </p>
+          <p class="descriptionAction">
+            It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
+    questions, our support team would be happy to help you.
+          </p>
+          <div class="row d-flex justify-content-center" >
+            <div class="col col-lg-6 d-flex justify-content-center actionItem">
+              <input type="text" class="actionTextBox" placeholder="email@example.com"/>
+            </div>
+            <div class="col col-lg-6 d-flex justify-content-center actionItem">
+              <button class="actionButton">Get Started for Free</button>
+            </div>
+          </div>
+    </div>
+  </div>
+</div>
 
-  Satish Patel
-  Founder & CEO, Huddle
 
-  Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
-  become a well-oiled collaboration machine.
+<div class ="container d-flex justify-content-center align-items-center h-100 footerSection">
+  <div class="row d-flex justify-content-center">
+    <div class = "col-sm-1 col-lg-2">
+      <div class="row footerItem">
+        <img class="logoBottom" src="./images/logo.svg" alt="Logo">
+      </div>
+      <div class="row d-flex justify-content-start footerItem">
+        <div style="width: 17%"><img class="locationIcon" src="./images/icon-location.svg" alt="Logo"></div>
+        <div style="width: 83%;color: white;font-family: Raleway;"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+          dolore magna aliqua</p></div>
+      </div>
+    </div>
 
-  Bruce McKenzie
-  Founder & CEO, Huddle
+    <div class = "col-sm-1 col-lg-2">
+      <div class="row footerItem">
+        <div style="width: 17%"><img src="./images/icon-phone.svg" alt="Logo"></div>
+        <div style="width: 83%;color: white;font-family: Raleway;"><p>+1-543-123-4567</p></div>
+      </div>
+      <div class="row footerItem">
+        <div style="width: 17%"><img src="./images/icon-email.svg" alt="Logo"></div>
+        <div style="width: 83%;color: white;font-family: Raleway;"><p>example@fylo.com</p></div>
+      </div>
+    </div>
 
-  Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
-  become a well-oiled collaboration machine.
+    <div class = "col-sm-1 col-lg-2">
+      <div class="row footerItem" style="padding-top: 30px;">
+        <p>About Us</p>
+        <p>Jobs</p>
+        <p>Press</p>
+        <p>Blog</p>
+      </div>
+    </div>
 
-  Iva Boyd
-  Founder & CEO, Huddle
+    <div class = "col-sm-1 col-lg-2">
+      <div class="row footerItem" style="padding-top: 30px;">
+        <p>Contact Us</p>
+        <p>Terms</p>
+        <p>Privacy</p>
+      </div>
+    </div> 
+    
+    <div class = "col-sm-1 col-lg-2">
+      <div class="row d-flex justify-content-center footerItem" style="padding-top: 30px;">
+        <img src="./images/icons8-facebook-96.png" style="width:50px"/>
+        <img src="./images/icons8-twitterx-100.png" style="width:50px"/>
+        <img src="./images/icons8-instagram-96.png" style="width:50px"/>
+      </div>
+    </div> 
+    
+  </div>
+</div>
 
-  Get early access today
 
-  It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
-  questions, our support team would be happy to help you.
 
-  Get Started For Free
+  
 
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-  dolore magna aliqua
-
-  +1-543-123-4567
-  example@fylo.com
-
-  About Us
-  Jobs
-  Press
-  Blog
-
-  Contact Us
-  Terms
-  Privacy
-
-  <footer>
+  <!-- <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Your Name Here</a>.
     </p>
-  </footer>
+  </footer> -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
